@@ -1,0 +1,84 @@
+{
+  "project_info": {
+    "project_number": "661100894317",
+    "project_id": "cryptobank-c8e1d",
+    "storage_bucket": "cryptobank-c8e1d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661100894317:android:13501483823fa30bb60764",
+        "android_client_info": {
+          "package_name": "my.cryptobankapp.cryptobank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661100894317-4ai2q3787miq0814htfmaq5q7fr3dhvf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.cryptobankapp.cryptobank",
+            "certificate_hash": "45876dad345b15948253caf8ae98cea3c089e7b5"
+          }
+        },
+        {
+          "client_id": "661100894317-9mgar41qsum16fj176ku05sctgb83v66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0H4uEH0Vd7VPiWRSdlrJxCjbzkMu4WJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661100894317-9mgar41qsum16fj176ku05sctgb83v66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:661100894317:android:771ddbe007212938b60764",
+        "android_client_info": {
+          "package_name": "my.patternpr.patternprogram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "661100894317-rusbpp5gtaqmbghneqlafipch6u836q5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "my.patternpr.patternprogram",
+            "certificate_hash": "45876dad345b15948253caf8ae98cea3c089e7b5"
+          }
+        },
+        {
+          "client_id": "661100894317-9mgar41qsum16fj176ku05sctgb83v66.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0H4uEH0Vd7VPiWRSdlrJxCjbzkMu4WJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "661100894317-9mgar41qsum16fj176ku05sctgb83v66.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

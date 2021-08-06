@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/first_screen"
+        android:background="@drawable/back1"
+        android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="190dp"
+        android:id="@+id/vidoplayer"
+        >
+
+        <FrameLayout
+            android:id="@+id/vid1"
+            android:layout_height="240dp"
+            android:layout_width="match_parent"
+
+            >
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/my_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/text_vid"
+            android:layout_below="@+id/vid1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_1"
+            />
+
+    </RelativeLayout>
+
+        <Button
+            android:layout_below="@+id/vidoplayer"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="30dp"
+            android:onClick="newScreenFunc"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/second_screen"
+        android:background="@drawable/back2"
+        android:visibility="invisible">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="200dp"
+            android:id="@+id/input1"
+            android:hint="   Imię "
+            android:visibility="visible"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@id/input1"
+            android:layout_marginTop="30dp"
+            android:id="@+id/input2"
+            android:hint="   Nazwisko"
+            android:visibility="visible"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_below="@id/input2"
+            android:id="@+id/input3"
+            android:hint="   Podaj swoj e-mail"
+            android:visibility="visible"
+            />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            app:ccp_showNameCode="false"
+            app:ccp_showFullName="false"
+            app:ccp_textGravity="LEFT"
+            app:ccp_defaultNameCode="PL"
+            app:ccp_showFlag="true"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/input"
+            app:ccp_textSize="15dp"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:layout_below="@id/input3"
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/input"
+            android:layout_below="@id/input3"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="40dp"
+            android:id="@+id/input4"
+            android:hint="   123 456 789"
+            android:visibility="visible"
+            />
+
+        <Button
+            android:layout_below="@+id/input4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button2"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="40dp"
+            android:onClick="newScreenFunc2"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/third_screen"
+        android:visibility="invisible"
+        android:background="@drawable/back3">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pavel"
+            android:textAllCaps="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="190dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/finalText1"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="polanski"
+            android:textAllCaps="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:id="@+id/finalText2"
+            android:layout_below="@+id/finalText1"
+            />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

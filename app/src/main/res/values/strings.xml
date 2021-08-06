@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Pattern Program</string>
+
+    <string name="facebook_app_id">596731877973497</string>
+    <string name="fb_login_protocol_scheme">fb596731877973497</string>
+
+
+</resources>
